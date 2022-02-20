@@ -6992,6 +6992,90 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps63802.pdf"&gt; Datasheet
 </deviceset>
 </devicesets>
 </library>
+<library name="BC846S">
+<packages>
+<package name="SOT363">
+<description>&lt;li&gt;&lt;b&gt;SOT363&lt;/b&gt;&lt;hr&gt;
+&lt;ul&gt;&lt;li&gt;Plastic surface-mounted package; 6 leads
+&lt;li&gt;&lt;u&gt;JEDEC&lt;/u&gt;: --
+&lt;li&gt;&lt;u&gt;IEC&lt;/u&gt;: --
+&lt;li&gt;&lt;u&gt;JEITA&lt;/u&gt;:  SC-88&lt;/ul&gt;</description>
+<wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="51"/>
+<circle x="-0.7" y="-0.2" radius="0.2" width="0" layer="21"/>
+<text x="2.000090625" y="-1.00005" size="1.00005" layer="27">&gt;VALUE</text>
+<text x="2.00258125" y="0.50064375" size="1.001290625" layer="25">&gt;NAME</text>
+<rectangle x1="-0.1251875" y1="0.625940625" x2="0.125" y2="0.925" layer="51"/>
+<rectangle x1="0.525421875" y1="0.625503125" x2="0.775" y2="0.925" layer="51"/>
+<rectangle x1="-0.125215625" y1="-0.9266" x2="0.125" y2="-0.625" layer="51"/>
+<rectangle x1="0.5256625" y1="-0.92616875" x2="0.775" y2="-0.625" layer="51"/>
+<rectangle x1="-0.775078125" y1="-0.92509375" x2="-0.525" y2="-0.625" layer="51"/>
+<rectangle x1="-0.77649375" y1="0.62620625" x2="-0.525" y2="0.925" layer="51"/>
+<smd name="6" x="-0.75" y="0.9" dx="0.6" dy="0.6" layer="1"/>
+<smd name="5" x="0" y="0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="4" x="0.75" y="0.9" dx="0.6" dy="0.6" layer="1"/>
+<smd name="1" x="-0.75" y="-0.9" dx="0.6" dy="0.6" layer="1"/>
+<smd name="2" x="0" y="-0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="3" x="0.75" y="-0.9" dx="0.6" dy="0.6" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="-10.1656" y="7.62421875" size="1.77898125" layer="95">&gt;NAME</text>
+<text x="-10.1757" y="5.08786875" size="1.78075" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254046875" y1="-2.54046875" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BC846S" prefix="T">
+<description>Dual 65 V, 100 mA NPN/NPN general-purpose transistor
+&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt;&lt;p&gt;
+ &lt;img src="http://www.nxp.com/img/NXP_logo.png"&gt; &lt;a href="https://pricing.snapeda.com/parts/BC846S/NXP%20Semiconductors/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="-1" symbol="NPN" x="0" y="0"/>
+<gate name="-2" symbol="NPN" x="-12.7" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="SOT363">
+<connects>
+<connect gate="-1" pin="B" pad="2"/>
+<connect gate="-1" pin="C" pad="6"/>
+<connect gate="-1" pin="E" pad="1"/>
+<connect gate="-2" pin="B" pad="5"/>
+<connect gate="-2" pin="C" pad="3"/>
+<connect gate="-2" pin="E" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" Bipolar (BJT) Transistor Array 2 NPN (Dual) 65V 100mA 100MHz 300mW Surface Mount 6-TSSOP "/>
+<attribute name="MF" value="NXP Semiconductors"/>
+<attribute name="MP" value="BC846S"/>
+<attribute name="PACKAGE" value="SOT-363 NXP Semiconductors"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/BC846S/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7038,6 +7122,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps63802.pdf"&gt; Datasheet
 <part name="R26" library="vb_R" deviceset="RESISTOR_0402" device="" value="10K"/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R25" library="vb_R" deviceset="RESISTOR_0402" device="" value="10K"/>
+<part name="T1" library="BC846S" deviceset="BC846S" device=""/>
+<part name="R2" library="vb_R_EC" deviceset="RESISTOR_0402" device="" value="10k"/>
+<part name="R5" library="vb_R_EC" deviceset="RESISTOR_0402" device="" value="10k"/>
+<part name="C1" library="vb_C_EC" deviceset="CAPACITOR_CERAMIC_0402_100NF" device="" value="100nF 50V"/>
+<part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7176,6 +7265,29 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps63802.pdf"&gt; Datasheet
 <attribute name="NAME" x="196.088" y="69.596" size="1.27" layer="95" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="193.04" y="63.5" size="1.016" layer="96" ratio="10" rot="R270" align="center"/>
 </instance>
+<instance part="T1" gate="-1" x="91.44" y="25.4" smashed="yes">
+<attribute name="NAME" x="81.2744" y="33.02421875" size="1.77898125" layer="95"/>
+<attribute name="VALUE" x="81.2643" y="30.48786875" size="1.78075" layer="96"/>
+</instance>
+<instance part="T1" gate="-2" x="91.44" y="45.72" smashed="yes">
+<attribute name="NAME" x="81.2744" y="53.34421875" size="1.77898125" layer="95"/>
+<attribute name="VALUE" x="81.2643" y="50.80786875" size="1.78075" layer="96"/>
+</instance>
+<instance part="R2" gate="G$1" x="73.66" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="79.756" y="45.212" size="1.27" layer="95" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="73.66" y="48.26" size="1.016" layer="96" ratio="10" rot="R180" align="center"/>
+</instance>
+<instance part="R5" gate="G$1" x="73.66" y="25.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="79.756" y="24.892" size="1.27" layer="95" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="73.66" y="27.94" size="1.016" layer="96" ratio="10" rot="R180" align="center"/>
+</instance>
+<instance part="C1" gate="G$1" x="215.9" y="-22.86" smashed="yes">
+<attribute name="NAME" x="214.9475" y="-21.7805" size="0.762" layer="95" ratio="10" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="216.916" y="-21.844" size="0.762" layer="96" ratio="10" rot="R90" align="center-left"/>
+</instance>
+<instance part="GND1" gate="1" x="91.44" y="-38.1" smashed="yes">
+<attribute name="VALUE" x="88.9" y="-40.64" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7207,7 +7319,12 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps63802.pdf"&gt; Datasheet
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="C18" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="-43.18" x2="210.82" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="-43.18" x2="210.82" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="-40.64" x2="210.82" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="-27.94" x2="215.9" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="-40.64" x2="210.82" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="210.82" y="-40.64"/>
 </segment>
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
@@ -7260,6 +7377,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps63802.pdf"&gt; Datasheet
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="38.1" x2="195.58" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="GND30" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="-35.56" x2="91.44" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!CS_ESP" class="0">
@@ -7325,11 +7447,6 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps63802.pdf"&gt; Datasheet
 <label x="78.74" y="-5.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="91.44" y1="-5.08" x2="91.44" y2="-8.89" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="+"/>
-<label x="91.44" y="-5.08" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="-12.7" x2="48.26" y2="-15.24" width="0.1524" layer="91"/>
 <label x="48.26" y="-12.7" size="1.27" layer="95" rot="R90" xref="yes"/>
@@ -7359,6 +7476,14 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps63802.pdf"&gt; Datasheet
 <label x="220.98" y="-2.54" size="1.27" layer="95" xref="yes"/>
 <wire x1="215.9" y1="-2.54" x2="220.98" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="215.9" y="-2.54"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<junction x="215.9" y="-17.78"/>
+</segment>
+<segment>
+<pinref part="T1" gate="-2" pin="C"/>
+<wire x1="93.98" y1="50.8" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="60.96" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
+<label x="99.06" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LED" class="0">
@@ -7387,9 +7512,9 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps63802.pdf"&gt; Datasheet
 <label x="254" y="-58.42" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="-30.48" x2="91.44" y2="-35.56" width="0.1524" layer="91"/>
-<label x="91.44" y="-35.56" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="D1" gate="G$1" pin="+"/>
+<wire x1="91.44" y1="-8.89" x2="91.44" y2="-2.54" width="0.1524" layer="91"/>
+<label x="91.44" y="-2.54" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -7673,6 +7798,52 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps63802.pdf"&gt; Datasheet
 <pinref part="U1" gate="G$1" pin="IO0"/>
 <wire x1="287.02" y1="-45.72" x2="292.1" y2="-45.72" width="0.1524" layer="91"/>
 <label x="292.1" y="-45.72" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="T1" gate="-1" pin="C"/>
+<wire x1="93.98" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
+<label x="104.14" y="30.48" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="T1" gate="-2" pin="B"/>
+<wire x1="88.9" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="T1" gate="-1" pin="B"/>
+<wire x1="88.9" y1="25.4" x2="78.74" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="DTR" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="45.72" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
+<label x="63.5" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="T1" gate="-1" pin="E"/>
+<wire x1="66.04" y1="45.72" x2="63.5" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="20.32" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="20.32" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="38.1" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
+<junction x="66.04" y="45.72"/>
+</segment>
+</net>
+<net name="RTS" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="25.4" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
+<label x="63.5" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="T1" gate="-2" pin="E"/>
+<wire x1="66.04" y1="25.4" x2="63.5" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="40.64" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="35.56" x2="66.04" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="35.56" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
+<junction x="66.04" y="25.4"/>
 </segment>
 </net>
 </nets>

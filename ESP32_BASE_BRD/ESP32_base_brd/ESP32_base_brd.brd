@@ -1526,6 +1526,36 @@ chip</description>
 </package>
 </packages>
 </library>
+<library name="BC846S">
+<packages>
+<package name="SOT363">
+<description>&lt;li&gt;&lt;b&gt;SOT363&lt;/b&gt;&lt;hr&gt;
+&lt;ul&gt;&lt;li&gt;Plastic surface-mounted package; 6 leads
+&lt;li&gt;&lt;u&gt;JEDEC&lt;/u&gt;: --
+&lt;li&gt;&lt;u&gt;IEC&lt;/u&gt;: --
+&lt;li&gt;&lt;u&gt;JEITA&lt;/u&gt;:  SC-88&lt;/ul&gt;</description>
+<wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="51"/>
+<circle x="-0.7" y="-0.2" radius="0.2" width="0" layer="21"/>
+<text x="2.000090625" y="-1.00005" size="1.00005" layer="27">&gt;VALUE</text>
+<text x="2.00258125" y="0.50064375" size="1.001290625" layer="25">&gt;NAME</text>
+<rectangle x1="-0.1251875" y1="0.625940625" x2="0.125" y2="0.925" layer="51"/>
+<rectangle x1="0.525421875" y1="0.625503125" x2="0.775" y2="0.925" layer="51"/>
+<rectangle x1="-0.125215625" y1="-0.9266" x2="0.125" y2="-0.625" layer="51"/>
+<rectangle x1="0.5256625" y1="-0.92616875" x2="0.775" y2="-0.625" layer="51"/>
+<rectangle x1="-0.775078125" y1="-0.92509375" x2="-0.525" y2="-0.625" layer="51"/>
+<rectangle x1="-0.77649375" y1="0.62620625" x2="-0.525" y2="0.925" layer="51"/>
+<smd name="6" x="-0.75" y="0.9" dx="0.6" dy="0.6" layer="1"/>
+<smd name="5" x="0" y="0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="4" x="0.75" y="0.9" dx="0.6" dy="0.6" layer="1"/>
+<smd name="1" x="-0.75" y="-0.9" dx="0.6" dy="0.6" layer="1"/>
+<smd name="2" x="0" y="-0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="3" x="0.75" y="-0.9" dx="0.6" dy="0.6" layer="1"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1816,6 +1846,30 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-39.51" y="12.7" size="0.8128" layer="25" rot="R90" align="center"/>
 <attribute name="VALUE" x="-38.24" y="12.7" size="0.8128" layer="27" rot="R90" align="center"/>
 </element>
+<element name="T1" library="BC846S" package="SOT363" value="BC846S" x="-45.72" y="-2.54" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="-45.72" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Bipolar (BJT) Transistor Array 2 NPN (Dual) 65V 100mA 100MHz 300mW Surface Mount 6-TSSOP " x="-45.72" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="NXP Semiconductors" x="-45.72" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="BC846S" x="-45.72" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-43.71741875" y="-2.03935625" size="1.001290625" layer="25"/>
+<attribute name="PACKAGE" value="SOT-363 NXP Semiconductors" x="-45.72" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="-45.72" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/BC846S/?ref=eda" x="-45.72" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-43.719909375" y="-3.54005" size="1.00005" layer="27"/>
+</element>
+<element name="R2" library="vb_R_EC" package="0402" value="10k" x="-46.99" y="-6.35" smashed="yes">
+<attribute name="NAME" x="-46.99" y="-5.588" size="0.4064" layer="25" align="center"/>
+<attribute name="VALUE" x="-46.99" y="-6.35" size="0.4064" layer="27" align="center"/>
+</element>
+<element name="R5" library="vb_R_EC" package="0402" value="10k" x="-44.45" y="-6.35" smashed="yes">
+<attribute name="NAME" x="-44.45" y="-5.588" size="0.4064" layer="25" align="center"/>
+<attribute name="VALUE" x="-44.45" y="-6.35" size="0.4064" layer="27" align="center"/>
+</element>
+<element name="C1" library="vb_C_EC" package="0402" value="100nF 50V" x="-45.72" y="-8.89" smashed="yes">
+<attribute name="MPN" value="GPC0402104" x="-45.72" y="-8.89" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-45.72" y="-8.128" size="0.4064" layer="25" align="center"/>
+<attribute name="VALUE" x="-45.72" y="-8.89" size="0.4064" layer="27" align="center"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1835,21 +1889,25 @@ design rules under a new name.</description>
 <contactref element="C11" pad="1"/>
 <contactref element="R10" pad="1"/>
 <contactref element="R26" pad="1"/>
-<wire x1="-38.95" y1="26.67" x2="-42.05" y2="18.415" width="0" layer="19" extent="1-1"/>
-<wire x1="-45.3" y1="26.67" x2="-38.95" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-40.64" y1="33.02" x2="-38.95" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-37.29" y1="33.02" x2="-40.64" y2="33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="-41.148" y1="38.1" x2="-40.64" y2="33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="-47.498" y1="38.1" x2="-41.148" y2="38.1" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.57" y1="28.44" x2="-37.29" y2="33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.57" y1="27.94" x2="-27.57" y2="28.44" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.12" y1="27.94" x2="-27.57" y2="27.94" width="0" layer="19" extent="1-1"/>
+<contactref element="C1" pad="1"/>
+<contactref element="R3" pad="1"/>
+<wire x1="-24.05" y1="3.7" x2="-46.228" y2="-8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.05" y1="21.7" x2="-24.05" y2="3.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.12" y1="27.94" x2="-24.05" y2="21.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-27.57" y1="27.94" x2="-26.12" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="-27.57" y1="28.44" x2="-27.57" y2="27.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.98" y1="34.29" x2="-27.57" y2="28.44" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.63" y1="34.29" x2="-24.98" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.05" y1="21.7" x2="-26.12" y2="27.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.638" y1="41.91" x2="-24.98" y2="34.29" width="0" layer="19" extent="1-1"/>
 <wire x1="-19.558" y1="41.91" x2="-24.638" y2="41.91" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.05" y1="3.7" x2="-24.05" y2="21.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.29" y1="33.02" x2="-27.57" y2="28.44" width="0" layer="19" extent="1-1"/>
+<wire x1="-40.64" y1="33.02" x2="-37.29" y2="33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-41.148" y1="38.1" x2="-40.64" y2="33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-44.958" y1="38.1" x2="-41.148" y2="38.1" width="0" layer="19" extent="1-1"/>
+<wire x1="-47.498" y1="38.1" x2="-44.958" y2="38.1" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.95" y1="26.67" x2="-37.29" y2="33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-45.3" y1="26.67" x2="-38.95" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="-42.05" y1="18.415" x2="-38.95" y2="26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!CS_ESP">
 <contactref element="U1" pad="29"/>
@@ -1874,7 +1932,6 @@ design rules under a new name.</description>
 <contactref element="C18" pad="2"/>
 <contactref element="R1" pad="2"/>
 <contactref element="D6" pad="+"/>
-<contactref element="D1" pad="+"/>
 <contactref element="R7" pad="2"/>
 <contactref element="D2" pad="+"/>
 <contactref element="U$8" pad="2"/>
@@ -1883,7 +1940,6 @@ design rules under a new name.</description>
 <wire x1="-15.51" y1="27.94" x2="-25.32" y2="21.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-23.28" y1="34.29" x2="-15.51" y2="27.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.5925" y1="38.1" x2="-23.28" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-20.7825" y1="38.1" x2="-24.5925" y2="38.1" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.4025" y1="38.1" x2="-24.5925" y2="38.1" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.9292" y1="38.1" x2="-28.4025" y2="38.1" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.132" y1="38.1" x2="-35.9292" y2="38.1" width="0" layer="19" extent="1-1"/>
@@ -1891,6 +1947,10 @@ design rules under a new name.</description>
 <signal name="EN">
 <contactref element="R1" pad="1"/>
 <contactref element="U1" pad="3"/>
+<contactref element="T1" pad="3"/>
+<contactref element="C1" pad="2"/>
+<wire x1="-44.97" y1="-3.44" x2="-45.212" y2="-8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="-46.72" y1="3.81" x2="-44.97" y2="-3.44" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.59" y1="21.7" x2="-46.72" y2="3.81" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED">
@@ -1905,8 +1965,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="BOOT_LED">
 <contactref element="U1" pad="16"/>
-<contactref element="R3" pad="1"/>
-<wire x1="-44.958" y1="38.1" x2="-42.05" y2="17.145" width="0" layer="19" extent="1-1"/>
+<contactref element="D1" pad="+"/>
+<wire x1="-20.7825" y1="38.1" x2="-42.05" y2="17.145" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R3" pad="2"/>
@@ -2040,6 +2100,28 @@ design rules under a new name.</description>
 </signal>
 <signal name="IO0">
 <contactref element="U1" pad="25"/>
+<contactref element="T1" pad="6"/>
+<wire x1="-40.56" y1="3.7" x2="-46.47" y2="-1.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$1">
+<contactref element="T1" pad="5"/>
+<contactref element="R2" pad="1"/>
+<wire x1="-45.72" y1="-1.64" x2="-47.498" y2="-6.35" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$2">
+<contactref element="T1" pad="2"/>
+<contactref element="R5" pad="1"/>
+<wire x1="-44.958" y1="-6.35" x2="-45.72" y2="-3.44" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DTR">
+<contactref element="R2" pad="2"/>
+<contactref element="T1" pad="1"/>
+<wire x1="-46.47" y1="-3.44" x2="-46.482" y2="-6.35" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RTS">
+<contactref element="R5" pad="2"/>
+<contactref element="T1" pad="4"/>
+<wire x1="-44.97" y1="-1.64" x2="-43.942" y2="-6.35" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
